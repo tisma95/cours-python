@@ -23,7 +23,7 @@ SyntaxError: invalid syntax
 ...     print("Bonjour tout le monde")
 ... 
 ...     
->>> # Execution
+>>> # Exécution
 >>> hello()
 Bonjour tout le monde
 >>> hello()
@@ -35,7 +35,7 @@ Bonjour tout le monde
 ...     print(f"Bonjour {nom} !")
 ... 
 ...     
->>> # Execution
+>>> # Exécution
 >>> hello("Christophe")
 Bonjour Christophe !
 >>> hello("Oscar")
