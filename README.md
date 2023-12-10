@@ -1,2 +1,2 @@
 # cours-python
-Cours d'introduction à Python
+Cours d'introduction à Python.
