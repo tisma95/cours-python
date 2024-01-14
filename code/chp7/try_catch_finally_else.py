@@ -13,7 +13,7 @@
 
     else:
 
-        # Code à exécuter en si aucune erreur dans le try
+        # Code à exécuter si aucune erreur dans le try
 
 
 
