@@ -15,4 +15,8 @@
     FIN
 """
 
-# TODO: Ecrire le code en python et afficher le contenu des variables
+a = 1
+b = a + 3
+a = 3
+print("A=", a)
+print("B=", b)
