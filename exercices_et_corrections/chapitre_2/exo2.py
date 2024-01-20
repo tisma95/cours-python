@@ -23,4 +23,6 @@ C = A + B
 A = 2
 C = B - A
 
-print ("A=",A,"B=",B,"C=",C)
+print ("A=",A)
+print("B=",B)
+print("C=",C)
