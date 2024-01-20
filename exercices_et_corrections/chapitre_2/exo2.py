@@ -17,10 +17,4 @@
     FIN
 """
 
-A=5
-B=3
-C=A+B
-A=2
-C=B-A
-
-print ("A=",A,"B=",B,"C=",C)
+# TODO: Ecrire le code en python et afficher le contenu des variables
