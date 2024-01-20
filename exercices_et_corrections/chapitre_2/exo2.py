@@ -17,4 +17,12 @@
     FIN
 """
 
-# TODO: Ecrire le code en python et afficher le contenu des variables
+A = 5
+B = 3
+C = A + B
+A = 2
+C = B - A
+
+print ("A=",A)
+print("B=",B)
+print("C=",C)
