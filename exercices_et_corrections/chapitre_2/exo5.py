@@ -21,3 +21,9 @@
 """
 
 # TODO: Ecrire le code en python et afficher le contenu des variables
+
+A=5
+B=2
+A=B
+B=A
+print ("Valeur A =",A,"\nValeur B =",B)

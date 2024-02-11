@@ -12,3 +12,14 @@
 """
 
 # TODO: Ecrire le code en python et afficher le contenu des variables
+
+A = 12
+B = 13
+C = 3
+print ("A est définit comme",A,"\nB est définit comme",B,"\nC est deffinit comme",C)
+B = A
+print ("si B=A alors B devient:",B)
+C = B
+print ("si C=B alors C devient",C)
+A = C
+print ("et si A=C alors A devient", A,"\nPS: J'ai fait l'exercice avec A, B et C de valeurs respectives 12, 13, 3 et j'en ai compris le concept")
