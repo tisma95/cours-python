@@ -20,10 +20,15 @@
     les deux dernières instructions, cela change-t-il quelque chose ?
 """
 
-# TODO: Ecrire le code en python et afficher le contenu des variables
-
-A=5
-B=2
-A=B
-B=A
-print ("Valeur A =",A,"\nValeur B =",B)
+A = 5
+B = 2
+A = B
+B = A
+# Non çà ne change pas les valeurs des deux variables
+print ("1.Non çà ne change pas les valeurs des deux variables\nValeur A =", A, "\nValeur B =", B)
+A = 5
+B = 2
+B = A
+A = B
+# Oui celà change la valeur des variables
+print ("2.Oui celà change la valeur des variables\nValeur A =", A, "\nValeur B =", B)

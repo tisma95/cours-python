@@ -11,15 +11,24 @@
     Tester l’algorithme avec différentes valeurs de A, B, et C.
 """
 
-# TODO: Ecrire le code en python et afficher le contenu des variables
-
+# Résultat attendu A = 3, B = 12, C =13
+print ("Méthode 1")
 A = 12
 B = 13
 C = 3
-print ("A est définit comme",A,"\nB est définit comme",B,"\nC est deffinit comme",C)
-B = A
-print ("si B=A alors B devient:",B)
-C = B
-print ("si C=B alors C devient",C)
+# Méthode 1
+print(f"Avant A={A}, B={B}, C={C}")
+tmp = A
 A = C
-print ("et si A=C alors A devient", A,"\nPS: J'ai fait l'exercice avec A, B et C de valeurs respectives 12, 13, 3 et j'en ai compris le concept")
+C = B
+B = tmp
+print(f"Après A={A}, B={B}, C={C}")
+
+# Méthode 2
+print ("\nMéthode 2 (Python) => A, B = B, A")
+A = 12
+B = 13
+C = 3
+print(f"Avant A={A}, B={B}, C={C}")
+A, B, C = C, A, B
+print(f"Après A={A}, B={B}, C={C}")
