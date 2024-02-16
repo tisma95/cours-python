@@ -11,3 +11,14 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+saisie=input ("Veuillez entrer un nombre au hazard\n---> ")
+nbre=int(saisie)
+
+if nbre > 0: 
+    print (nbre,"est POSITIF" )
+elif nbre < 0:
+    print (nbre,"est NEGATIF" )
+elif nbre == 0:
+    print ("ZERO est NUL")
+

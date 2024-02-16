@@ -11,3 +11,19 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+saisie1=input ("Nombre 1\n---> ")
+saisie2=input ("Nombre 2\n---> ")
+nbre1=float(saisie1)
+nbre2=float(saisie2)
+produit=nbre1*nbre2
+print ("Le produit de",saisie1,"X",saisie2,"=",produit,"\n") 
+
+
+if produit > 0: 
+    print (produit,"est un produit POSITIF\n" )
+elif produit < 0:
+    print (produit,"est un produit NEGATIF\n" )
+elif produit == 0:
+    print ("MULTIPLIER PAR ZERO N'A PAS DE SENS !\n")
+

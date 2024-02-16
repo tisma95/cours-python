@@ -12,3 +12,23 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+saisie=input ("Veuillez entrer votre âge: ")
+age=int(saisie)
+print ("Vous avez",age,"ans et entrez donc dans la cathégorie:")
+if age >=50:
+    print ("SENIOR")
+elif (age >=18 and age <=49):
+    print ("JUNIOR")
+elif (age >=12 and age <=17):
+    print ("CADET")
+elif (age >=10 and age <=11):
+    print ("MINIME")
+elif (age >=8 and age <=9):
+    print ("PUPILLE")
+elif age <= 7:
+    print ("POUSSIN")
+
+
+
+
