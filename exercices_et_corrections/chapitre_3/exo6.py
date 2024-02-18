@@ -12,3 +12,15 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+username = input ("Votre nom d'utilisateur ?")
+
+passwd = input ("Votre mot de passe :")
+
+
+if username == "Christophe" and passwd == "chris1234":
+    print ("\nBienvenue",username,"\n")
+elif username != "Christophe":
+    print ("\nNom d’utilisateur incorrect\n" )
+elif passwd != "chris1234":
+    print ("\nMot de passe Incorrect\n" )

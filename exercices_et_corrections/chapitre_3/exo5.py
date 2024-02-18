@@ -13,3 +13,13 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+username = input ("Votre nom d'utilisateur ?")
+
+passwd = input ("Votre mot de passe :")
+
+
+if username == "Christophe" and passwd == "chris1234":
+    print ("\nBienvenue",username)
+else:
+    print ("\nNom d’utilisateur et/ou mot de passe incorrect(s)\n" )
