@@ -12,14 +12,17 @@
     sinon afficher « Bienvenue Christophe ! ».
 """
 
-# TODO: Ecrire le code en python ci dessous
+# Saisie des secrets => pour éviter de modifier dans le code les valeurs
+secretUtilisateur = "Christophe"
+secretMotDePasse = "chris1234"
 
-username = input ("Votre nom d'utilisateur ?")
+# Demander à l'utilisateur son nom d'utilisateur et son mot de passe
+nomUtilisateur = input("Entrer votre nom d'utilisateur:")
+motDePasse = input("Entrer votre mot de passe:")
+print("Vous avez saisi comme nom d'utilisateur:", nomUtilisateur)
+print("Vous avez saisi comme mot de passe:", motDePasse)
 
-passwd = input ("Votre mot de passe :")
-
-
-if username == "Christophe" and passwd == "chris1234":
-    print ("\nBienvenue",username)
+if nomUtilisateur == secretUtilisateur and motDePasse == secretMotDePasse:
+    print("Bienvenue", secretUtilisateur)
 else:
-    print ("\nNom d’utilisateur et/ou mot de passe incorrect(s)\n" )
+    print("Nom d’utilisateur et/ou mot de passe incorrect(s)")

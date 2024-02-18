@@ -10,20 +10,23 @@
     ou positif ou nul.
 """
 
-# TODO: Ecrire le code en python ci dessous
-
-saisie1=input ("Nombre 1\n---> ")
-saisie2=input ("Nombre 2\n---> ")
-nbre1=float(saisie1)
-nbre2=float(saisie2)
-produit=nbre1*nbre2
-print ("Le produit de",saisie1,"X",saisie2,"=",produit,"\n") 
-
-
-if produit > 0: 
-    print (produit,"est un produit POSITIF\n" )
-elif produit < 0:
-    print (produit,"est un produit NEGATIF\n" )
-elif produit == 0:
-    print ("MULTIPLIER PAR ZERO N'A PAS DE SENS !\n")
-
+# Demander à l'utilisateur le premier nombre
+nbre1 = input("Veuillez entrer le nombre 1:")
+# Convertion de la saisie de l'utilisateur qui est du type string alors qu'on a besoin du type int
+nbre1 = int(nbre1)
+print("Vous avez saisi le nombre 1:", nbre1)
+# Demander à l'utilisateur le deuxième nombre
+nbre2 = input("Veuillez entrer le nombre 2:")
+# Convertion de la saisie de l'utilisateur qui est du type string alors qu'on a besoin du type int
+nbre2 = int(nbre2)
+print("Vous avez saisi le nombre 2:", nbre2)
+# Calcul du résultat de la multiplication de nbre1 par nbre2
+produit = nbre1 * nbre2
+print(f"Le résultat de {nbre1} x {nbre2} donne: {produit}")
+# Analyse du signe du produit
+if produit < 0:
+    print(f"Le produit de {nbre1} par {nbre2} est négatif")
+elif produit > 0:
+    print(f"Le produit de {nbre1} par {nbre2} est positif")
+else:
+    print(f"Le produit de {nbre1} par {nbre2} est nul")

@@ -10,15 +10,14 @@
     négatif. On prendra en compte le cas où le nombre est nul.
 """
 
-# TODO: Ecrire le code en python ci dessous
-
-saisie=input ("Veuillez entrer un nombre au hazard\n---> ")
-nbre=int(saisie)
-
-if nbre > 0: 
-    print (nbre,"est POSITIF" )
-elif nbre < 0:
-    print (nbre,"est NEGATIF" )
-elif nbre == 0:
-    print ("ZERO est NUL")
-
+# Demander un nombre à l'utilisateur
+nbre = input("Entrer un nombre svp:")
+nbre = int(nbre)
+print("Vous avez saisi le nombre:", nbre)
+# Vérifions le signe du nombre
+if nbre < 0:
+    print(f"Le nombre {nbre} est un nombre négatif.")
+elif nbre > 0:
+    print(f"Le nombre {nbre} est un nombre positif.")
+else:
+    print(f"Le nombre {nbre} est un nombre nul.")

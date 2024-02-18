@@ -11,16 +11,45 @@
     passe incorrects ! ».
 """
 
-# TODO: Ecrire le code en python ci dessous
+# Saisie des secrets => pour éviter de modifier dans le code les valeurs
+secretUtilisateur = "Christophe"
+secretMotDePasse = "chris1234"
 
-username = input ("Votre nom d'utilisateur ?")
+# Demander à l'utilisateur son nom d'utilisateur et son mot de passe
+nomUtilisateur = input("Entrer votre nom d'utilisateur:")
+motDePasse = input("Entrer votre mot de passe:")
+print("Vous avez saisi comme nom d'utilisateur:", nomUtilisateur)
+print("Vous avez saisi comme mot de passe:", motDePasse)
 
-passwd = input ("Votre mot de passe :")
+# Méthode 1: sans imbrication
+if nomUtilisateur == secretUtilisateur and motDePasse == secretMotDePasse:
+    print("Bienvenue", secretUtilisateur)
+elif nomUtilisateur != secretUtilisateur and motDePasse != secretMotDePasse:
+    print("Nom d’utilisateur et mot de passe incorrects")
+elif nomUtilisateur != secretUtilisateur:
+    print("Nom d’utilisateur incorrect")
+else:
+    print("Mot de passe incorrect")
 
+# Méthode 2: avec imbrication
+if nomUtilisateur == secretUtilisateur and motDePasse == secretMotDePasse:
+    print("Bienvenue", secretUtilisateur)
+else:
+    if nomUtilisateur != secretUtilisateur and motDePasse != secretMotDePasse:
+        print("Nom d’utilisateur et mot de passe incorrects")
+    elif nomUtilisateur != secretUtilisateur:
+        print("Nom d’utilisateur incorrect")
+    else:
+        print("Mot de passe incorrect")
 
-if username == "Christophe" and passwd == "chris1234":
-    print ("\nBienvenue",username,"\n")
-elif username != "Christophe":
-    print ("\nNom d’utilisateur incorrect\n" )
-elif passwd != "chris1234":
-    print ("\nMot de passe Incorrect\n" )
+# Méthode 3: avec multiple imbrications
+if nomUtilisateur == secretUtilisateur and motDePasse == secretMotDePasse:
+    print("Bienvenue", secretUtilisateur)
+else:
+    if nomUtilisateur != secretUtilisateur and motDePasse != secretMotDePasse:
+        print("Nom d’utilisateur et mot de passe incorrects")
+    else:
+        if nomUtilisateur != secretUtilisateur:
+            print("Nom d’utilisateur incorrect")
+        else:
+            print("Mot de passe incorrect")
