@@ -1,0 +1,28 @@
+"""
+    Exo 2:
+    Le gérant d'une coopérative agricole attribue un emploi du temps à ses travailleurs
+    suivant les conditions de la météo de la journée. il établit les règles suivantes:
+
+    - si la météo est jugée bonne l’employé effectue l'emploi du temps 1.
+    - si la météo est jugée mauvaise l’employé effectue l'emploi du temps 2.
+    - si la météo est jugée intermédiaire l’employé effectue l'emploi du temps 3.
+"""
+
+Début
+	Variable meteo en Chaîne
+
+    "Demander la météo"
+    Ecrire "Quelle est la météo du jour ? (b pour bonne, i pour intermédaire et m pour mauvaise)"
+    Lire meteo
+
+    "Analyse de la réponse"
+    Si meteo = "b" ou meteo = "B" Alors
+		Ecrire "Vous devez utiliser l'emploi du temps 1"
+	SinonSi meteo = "i" ou meteo = "I" Alors
+		Ecrire "Vous devez utiliser l'emploi du temps 3"
+    SinonSi meteo = "m" ou meteo = "M" Alors
+		Ecrire "Vous devez utiliser l'emploi du temps 2"
+	Sinon
+		Ecrire "Météo inconnue"
+	FinSi
+Fin

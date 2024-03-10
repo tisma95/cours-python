@@ -18,3 +18,17 @@ Objectifs : programmer un petit test sur les tables de multiplication.
 • Même chose pour une variable b.
 • Affiche à l’écran la question : « Combien vaut le produit a × b ? » (Remplace a et b par leur valeur !) • Récupère la réponse de l’utilisateur et transforme-la en un entier.
 • Si la réponse est correcte affiche « Bravo ! », sinon affiche « Perdu ! La bonne réponse était. . . ».
+
+
+Exo 4:
+
+Ecrire un programme en python qui demande à l'utilisateur son nom et ensuite ses prénoms.
+Le programme doit ensuite afficher le nom complet de l'utilisateur en respectant les conventions française.
+Supposons que l'utiliseur entre:
+Nom: doé
+Prénoms: john TOTO
+le programme doit afficher votre nom complet est: DOE John Toto
+Si il entre:
+Nom: doé
+Prénom: john il doit afficher DOE John
+Vous aurez besoin des fonctions suivantes: *upper()* (voir exo 2 plus), *title*
