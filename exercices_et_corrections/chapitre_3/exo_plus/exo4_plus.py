@@ -12,7 +12,7 @@ Nom: doé
 Prénom: john il doit afficher DOE John
 Vous aurez besoin des fonctions suivantes: *upper()* (voir exo 2 plus), *title*
 '''
+
 nom = input ("Veuillez entrer vore nom de famille: ")
 prenoms = input ("Veuillez entrer vos prénoms: ")
-print ("Bonjour",nom.upper(),prenoms.title())
-
+print ("Bonjour", nom.upper(), prenoms.title())
