@@ -199,4 +199,10 @@ AttributeError: 'list' object has no attribute 'extends'. Did you mean: 'extend'
 [1, 2, 2, 3]
 >>> 
 >>> 
->>> 
+>>> # Création d'une liste avec des valeurs de départ
+
+
+
+
+
+
