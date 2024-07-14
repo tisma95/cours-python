@@ -11,11 +11,12 @@
     Sachant aussi que len(chaine) renvoie la taille d’une chaine exemple len(nom) renverra 4 si nom="Toto".
     Ecrire un programe avec la boucle while qui affiche la liste des caractères d'une chaine.
 """
-
-name= input("Quel est votre prénom ? \n")
-nbCar = len(name)
+# L'utilisateur fournit son nom
+nom = input("Entrer votre nom:")
+# Calcul du nombre de caractères
+totalCaracteres = len(nom)
 index = 0
-print(f"\nle nom {name} contient les {nbCar} lettres suivantes\n")
-while index < nbCar:
-    print(name[index])
-    index=index+1
+print(f"\n{nom} contient {totalCaracteres} caractères qui sont:\n")
+while index < totalCaracteres:
+    print(nom[index])
+    index = index + 1

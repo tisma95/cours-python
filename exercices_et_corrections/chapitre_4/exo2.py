@@ -15,26 +15,21 @@ Sachant aussi que len(chaine) renvoie la taille d’une chaine exemple len(nom) 
 Ecrire un programme python équivalent à celui-ci en utilisant cette fois-ci la boucle while.
 """
 
-# TODO: Ecrire le code en python ci dessousname= "christophe"
-name= input(f"\nQuel est votre prénom ?\n")
-nbCar = len(name)
-index= 0
-indexV= 0
-indexC= 0
-print(f"\nle nom '{name}' contient les {nbCar} lettres suivantes\n")
-while index < nbCar:
-    for letter in name:
-        #Verif voyelle ou non
-        if letter in "AEIOUYaeiouy":
-            print(f"{letter} est une VOYELLE")
-            index=index+1
-            indexV=indexV+1
-        else:
-            print(f"{letter} est une CONSONNE")
-            index=index+1
-            indexC=indexC+1
-print(f"\n'{name}' contient donc {indexV} VOYELLES et {indexC} CONSONNES pour un total de {nbCar} lettres.\n")
-
-
-
-
+# L'utilisateur fournit son nom
+nom = input("Entrer votre nom:")
+# Calcul du nombre de caractères
+totalCaracteres = len(nom)
+index = 0
+totalConsonne = 0
+totalVoyelle = 0
+print(f"\nLe nom {nom} contient les lettres suivantes:\n")
+while index < totalCaracteres:
+    caractereActuel = nom[index]
+    if caractereActuel in "AEIOUYaeiouy":
+        print(f"La voyelle: {caractereActuel}")
+        totalVoyelle += 1 #=> Equivalent à totalVoyelle = totalVoyelle + 1
+    else:
+        print(f"La consonne: {caractereActuel}")
+        totalConsonne += 1 #=> Equivalent à totalConsonne = totalConsonne + 1
+    index = index + 1
+print(f"\n'{nom}' contient donc {totalVoyelle} voyelle(s) et {totalConsonne} consonne(s) pour un total de {totalCaracteres} lettres.\n")
