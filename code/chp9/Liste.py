@@ -9,12 +9,12 @@ for indice,valeur in enumerate(maListe):
 maListe = ['a', 1, 'toto', 4]
 # Enumerate avec une seule valeur
 for element in enumerate(maListe):
-    # Element contient deux valeur en indice 0 on a l'indice de l'élement et à l'indice 1 la valeur
+    # Elément contient deux valeurs en indice 0 on a l'indice de l'élement et à l'indice 1 la valeur
     print("Elément actuelle de enumerate:", element)
     # Création de l'indice et valeur
     indice = element[0]
     valeur = element[1]
-    print(f"Element à l'indice {indice}: {valeur}")
+    print(f"Elément à l'indice {indice}: {valeur}")
 
 
 # Création d'une chaine
@@ -68,3 +68,40 @@ carre = [elt * elt for elt in nombres]
 # La variable 'carre' est bien une liste
 print(type(carre))
 print(carre)
+
+
+######### Parcours avec filtrage #############
+
+# Création de liste des nombres de 0 à 10
+nombres = [n for n in range(11)]
+print("Les nombres de 0 à 10 sont:")
+print(nombres)
+# Création d'une liste des nombres pairs de 0 à 10 basée sur la liste précédente
+pairs = [n for n in nombres if n % 2 == 0]
+print("La liste des nombres pairs entre 0 et 10 sont:")
+print(pairs)
+
+######### Méthodes usuelles de liste #############
+liste = ['a', 1, 2, 'a']
+'a' in liste
+'b' in liste
+1 in liste
+
+liste = ['a', 1, 2, 'a']
+print(liste)
+'b' in liste
+liste.append('b')
+print(liste)
+'b' in liste
+
+
+liste = [1, 2, 3]
+print(liste)
+liste.reverse()
+print(liste)
+
+liste = ['a', 1, 2, 'a']
+print(liste)
+liste.count('a')
+liste.count('b')
+
