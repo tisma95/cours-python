@@ -10,18 +10,16 @@
     cas de réponse supérieure à 20, on fera apparaître un message: « Plus petit ! », et inversement « Plus grand ! » si
     le nombre est inférieur à 10.
 """
-
-# TODO: Ecrire le code en python ci dessous
-
-nbrSaisi = input("veuillez saisir un nombre compris entre 10 et 20:")
-nbrSaisi=int(nbrSaisi)
-while nbrSaisi < 10 or nbrSaisi > 20:
-    if nbrSaisi >20:
+# Variables paramètres pour adapter le programme pour d'autres types de valeurs
+N_MIN = 10
+N_MAX = 20
+nbrSaisi = N_MIN - 1
+# Execution du programme
+while nbrSaisi < N_MIN or nbrSaisi > N_MAX:
+    nbrSaisi = input(f"Veuillez saisir un nombre compris entre {N_MIN} et {N_MAX}:")
+    nbrSaisi = int(nbrSaisi)
+    if nbrSaisi > N_MAX:
         print(f"Plus petit !")
-        nbrSaisi = input("veuillez saisir un nombre compris entre 10 et 20:")
-        nbrSaisi=int(nbrSaisi)
-    elif nbrSaisi <10:
+    elif nbrSaisi < N_MIN:
         print(f"Plus grand !")
-        nbrSaisi = input("veuillez saisir un nombre compris entre 10 et 20:")
-        nbrSaisi=int(nbrSaisi)
-print (f"{nbrSaisi} est bien compris entre 10 et 20.")
+print (f"{nbrSaisi} est bien compris entre {N_MIN} et {N_MAX}.")
