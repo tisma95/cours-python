@@ -11,3 +11,10 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+depart = input("Veuillez entrer un nombre de départ pour en afficher les dix nombres suivants: ")
+depart = int(depart)
+for nbSuivants in range(depart+1,depart+11):
+    print(nbSuivants)
+
+
