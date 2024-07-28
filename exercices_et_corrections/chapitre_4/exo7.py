@@ -11,3 +11,9 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+tableMultiplication = input(f"Quelle table de multiplication ?")
+tableMultiplication = int(tableMultiplication)
+for multiplicateur in range(0,11):
+    multiplicateur = int(multiplicateur)
+    print(f"{multiplicateur} X {tableMultiplication} = {multiplicateur*tableMultiplication}")
