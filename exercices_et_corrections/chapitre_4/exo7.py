@@ -10,10 +10,9 @@
     nombre de 0 à 10.
 """
 
-# TODO: Ecrire le code en python ci dessous
-
-tableMultiplication = input(f"Quelle table de multiplication ?")
+tableMultiplication = input("Entrer le nombre dont vous voulez afficher la table de multiplication:")
 tableMultiplication = int(tableMultiplication)
-for multiplicateur in range(0,11):
-    multiplicateur = int(multiplicateur)
-    print(f"{multiplicateur} X {tableMultiplication} = {multiplicateur*tableMultiplication}")
+N_END = 10
+N_START = 0
+for multiplicateur in range(N_START, N_END + 1):
+    print(f"{multiplicateur} x {tableMultiplication} = {multiplicateur*tableMultiplication}")
