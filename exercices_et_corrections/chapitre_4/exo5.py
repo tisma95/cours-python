@@ -9,12 +9,14 @@
     Objectifs: Ecrire un programme qui demande un nombre de départ à l’utilisateur et qui affiche les dix nombres suivants.
     Par exemple, si l’utilisateur entre le nombre 17, le programme affichera les nombres de 18 à 27.
 """
+nbreDeDepart = input("Veuillez entrer un nombre de départ pour en afficher les dix nombres suivants: ")
+nbreDeDepart = int(nbreDeDepart)
+# Méthode 1: Affiche les nombres l'un à la suite de l'autre
+print(f"\nMéthode 1: Les dix nombres suivant {nbreDeDepart} l'un à la suite de l'autre sont:")
+for nbreSuivant in range(nbreDeDepart + 1, nbreDeDepart + 11):
+    print(nbreSuivant)
 
-# TODO: Ecrire le code en python ci dessous
-
-depart = input("Veuillez entrer un nombre de départ pour en afficher les dix nombres suivants: ")
-depart = int(depart)
-for nbSuivants in range(depart+1,depart+11):
-    print(nbSuivants)
-
-
+# Méthode 2: Affiche les nombres sur la même ligne utiliser end
+print(f"\nMéthode 2: Les dix nombres suivant {nbreDeDepart} sur une seule ligne sont:")
+for nbreSuivant in range(nbreDeDepart + 1, nbreDeDepart + 11):
+    print(nbreSuivant, end=" | ")
