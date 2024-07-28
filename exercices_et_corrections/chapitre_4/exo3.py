@@ -12,7 +12,7 @@
 
 nbrSaisi = input("Entrer un nombre entre 1 et 3:")
 nbrSaisi = int(nbrSaisi)
-while nbrSaisi < 1 or nbrSaisi >3 :
+while nbrSaisi < 1 or nbrSaisi > 3 :
     print ("essaye encore")
     nbrSaisi = input("Entrer un nombre entre 1 et 3:")
     nbrSaisi = int(nbrSaisi)
