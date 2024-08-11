@@ -10,14 +10,17 @@
     correcte ensuite si correcte demander le mot de passe si la saisie est correcte afficher le message de bienvenue.
 """
 
-# TODO: Ecrire le code en python ci dessous
 
-utilisateur = "Christophe"
+nomUtilisateur = "Christophe"
 motDePasse = "chris1234"
-saisieUtilisateur = input("Votre identifiant: ")
-while saisieUtilisateur != utilisateur:
-    saisieUtilisateur = input("\nVotre identifiant: ")
-saisieMotDePasse = input("Mot de passe: ")
+saisieUtilisateur = ''
+saisieMotDePasse = ''
+while saisieUtilisateur != nomUtilisateur:
+    saisieUtilisateur = input("Votre identifiant:")
+    if saisieUtilisateur != nomUtilisateur:
+        print("Nom d'utilisateur incorrect")
 while saisieMotDePasse != motDePasse:
-    saisieMotDePasse = input("Mot de passe: ")
-print("\nBienvenue "+utilisateur)
+    saisieMotDePasse = input("Mot de passe:")
+    if saisieMotDePasse != motDePasse:
+        print(f"Mote de passe de {nomUtilisateur} incorrect")
+print("\nBienvenue " + nomUtilisateur)
