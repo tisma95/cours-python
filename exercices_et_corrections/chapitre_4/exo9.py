@@ -11,13 +11,13 @@
     Sinon Afficher « Bienvenue Christophe ».
 """
 
-# TODO: Ecrire le code en python ci dessous
-
-utilisateur = "Christophe"
+nomUtilisateur = "Christophe"
 motDePasse = "chris1234"
-saisieUtilisateur = input("Votre identifiant: ")
-saisieMotDePasse = input("Mot de passe: ")
-while saisieUtilisateur != utilisateur or saisieMotDePasse != motDePasse:
-    saisieUtilisateur = input("\nVotre identifiant: ")
-    saisieMotDePasse = input("Mot de passe: ")
-print("\nBienvenue "+utilisateur)
+saisieUtilisateur = ''
+saisieMotDePasse = ''
+while saisieUtilisateur != nomUtilisateur or saisieMotDePasse != motDePasse:
+    saisieUtilisateur = input("Votre identifiant:")
+    saisieMotDePasse = input("Mot de passe:")
+    if saisieUtilisateur != nomUtilisateur or saisieMotDePasse != motDePasse:
+        print("\nNom d'utilisateur ou mot de passe Incorrect\n")
+print("\nBienvenue " + nomUtilisateur)
