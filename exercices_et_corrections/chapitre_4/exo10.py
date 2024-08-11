@@ -11,3 +11,13 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+utilisateur = "Christophe"
+motDePasse = "chris1234"
+saisieUtilisateur = input("Votre identifiant: ")
+while saisieUtilisateur != utilisateur:
+    saisieUtilisateur = input("\nVotre identifiant: ")
+saisieMotDePasse = input("Mot de passe: ")
+while saisieMotDePasse != motDePasse:
+    saisieMotDePasse = input("Mot de passe: ")
+print("\nBienvenue "+utilisateur)

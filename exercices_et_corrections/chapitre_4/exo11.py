@@ -12,3 +12,14 @@
 """
 
 # TODO: Ecrire le code en python ci dessous
+
+codeSecret = 1234
+limite = 3
+saisieCode = input(f"Veuillez saisir votre code: ({limite} tentatives restantes)")
+while saisieCode != codeSecret:
+    limite = limite - 1
+    if limite >= 1:
+        saisieCode = input(f"Veuillez saisir votre code: ({limite} tentatives restantes)")
+    else:
+        print("Carte bloquéé")
+print("paiement accepté")
