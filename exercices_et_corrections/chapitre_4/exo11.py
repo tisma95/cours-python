@@ -11,23 +11,17 @@
     bloquée » sinon afficher « Paiement accepté ».
 """
 
-# TODO: Ecrire le code en python ci dessous
-
-
 codeSecret = "1234"
 limiteSaisies = 3
 saisieCode = ''
-while saisieCode != codeSecret:
-    saisieCode = input(f"Veuillez entrer votre code secret ({limiteSaisies} essais restants)")
+
+while saisieCode != codeSecret and limiteSaisies > 0:
+    saisieCode = input(f"\nVeuillez entrer votre code secret ({limiteSaisies} essais restants):")
     if saisieCode == codeSecret:
-        print("Paiement accepté")
+        print("\nPaiement accepté")
     else:
         limiteSaisies = limiteSaisies - 1
+        print("\nCode incorrect")
         if limiteSaisies == 0:
-            print("Carte bloquée...")
-            break # AFIN DE NE PAS CONTINUER -1 -2  
-
-
-
-
-
+            print("\nCarte bloquée...\n")
+            #break # Pour sortir de la boucle si on utilise qu'une seule condition while saisieCode != codeSecret:
