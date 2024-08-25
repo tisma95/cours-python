@@ -13,13 +13,21 @@
 
 # TODO: Ecrire le code en python ci dessous
 
-codeSecret = 1234
-limite = 3
-saisieCode = input(f"Veuillez saisir votre code: ({limite} tentatives restantes)")
+
+codeSecret = "1234"
+limiteSaisies = 3
+saisieCode = ''
 while saisieCode != codeSecret:
-    limite = limite - 1
-    if limite >= 1:
-        saisieCode = input(f"Veuillez saisir votre code: ({limite} tentatives restantes)")
+    saisieCode = input(f"Veuillez entrer votre code secret ({limiteSaisies} essais restants)")
+    if saisieCode == codeSecret:
+        print("Paiement accepté")
     else:
-        print("Carte bloquéé")
-print("paiement accepté")
+        limiteSaisies = limiteSaisies - 1
+        if limiteSaisies == 0:
+            print("Carte bloquée...")
+            break # AFIN DE NE PAS CONTINUER -1 -2  
+
+
+
+
+
